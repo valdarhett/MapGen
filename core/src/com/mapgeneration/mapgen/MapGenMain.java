@@ -1,4 +1,4 @@
-package com.mapgenerator.mapgen;
+package com.mapgeneration.mapgen;
 
 import com.badlogic.gdx.ApplicationAdapter;
 import com.badlogic.gdx.Gdx;
@@ -38,13 +38,13 @@ public class MapGenMain extends ApplicationAdapter {
 				max = max > buffer ? max : buffer;
 				min = min < buffer ? min : buffer;
 				Color color = new Color(buffer, buffer, buffer, 1.0f);
-				// if (buffer < 0.3) {
-				// color = new Color(1.0f, buffer*2.5f,1.0f, 0.5f);
-				// } else if (buffer < 0.5 && buffer >=0.3) {
-				// color = new Color(1.0f, buffer, 1.0f, 0.5f);
-				// } else {
-				// color = new Color(1.0f, 1.0f, buffer, 0.5f);
-				// }
+				 if (buffer < 0.3) {
+				 color = new Color(1.0f, buffer*2.5f,1.0f, 0.5f);
+				 } else if (buffer < 0.5 && buffer >=0.3) {
+				 color = new Color(1.0f, buffer, 1.0f, 0.5f);
+				 } else {
+				 color = new Color(1.0f, 1.0f, buffer, 0.5f);
+				 }
 
 				sr.rect(x, y, 1.0f, 1.0f, color, color, color, color);
 			}

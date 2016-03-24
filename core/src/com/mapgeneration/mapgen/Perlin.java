@@ -1,4 +1,4 @@
-package com.mapgenerator.mapgen;
+package com.mapgeneration.mapgen;
 
 import java.util.Arrays;
 import java.util.HashMap;
